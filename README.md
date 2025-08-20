@@ -16,14 +16,38 @@ This project shows how to run a lightweight chatbot locally on your laptop’s N
 ## ⚡ Requirements
 Install these before running:
 ```bash
+git clone https://github.com/YOUR-USERNAME/tinyllama-npu.git
+cd tinyllama-npu
 pip install -r requirements.txt
+```
+---
+
+## ⚡ Model Optimization (INT4 Quantization)
+- The TinyLlama model was converted to INT4 precision using OpenVINO’s optimum-cli to reduce memory usage and boost performance.
+```bash
+optimum-cli export openvino --model "TinyLlama/TinyLlama-1.1B-Chat-v1.0" --task "text-generation-with-past" --weight-format fp16 --trust-remote-code ov_tinyllama
+```
+- The optimized INT4 model will be saved in the folder ./ov_tinyllama
 
 ---
 
-## 🚀 Next Steps
-- Add your **conversion commands** (like above) to the README.  
-- Mention **why INT4 matters** (smaller, faster, NPU-friendly).  
-- Push updated README so GitHub/LinkedIn visitors see you did more than just “run the model.”  
+## ▶️ Usage
+- Run inference with:
+```bash
+python chat.py
+```
 
 ---
+
+## 📸 Demo
+<img width="2406" height="1578" alt="Screenbox_20250420_190428" src="https://github.com/user-attachments/assets/8f413baa-3677-4547-982a-5f8ce9a303a3" />
+
+---
+
+## 🙌 Credits
+
+- [OpenVINO™](https://github.com/openvinotoolkit/openvino) – for optimized inference on Intel hardware  
+- [Optimum Intel](https://github.com/huggingface/optimum-intel) – Hugging Face integration with OpenVINO  
+- [Transformers](https://github.com/huggingface/transformers) – Hugging Face library for LLMs  
+- [TinyLlama](https://huggingface.co/TinyLlama) – the model used in this project  
 
