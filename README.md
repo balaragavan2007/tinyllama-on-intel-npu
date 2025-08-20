@@ -9,7 +9,6 @@ This project shows how to run a lightweight chatbot locally on your laptop’s N
 ## 📂 Project Features
 - Runs **TinyLlama** model on Intel NPU
 - Uses **OpenVINO** for optimized inference
-- Chatbot interface (like ChatGPT) in Python
 - INT4 quantization for faster performance
 
 ---
@@ -18,4 +17,13 @@ This project shows how to run a lightweight chatbot locally on your laptop’s N
 Install these before running:
 ```bash
 pip install -r requirements.txt
+
+---
+
+## 🚀 Next Steps
+- Add your **conversion commands** (like above) to the README.  
+- Mention **why INT4 matters** (smaller, faster, NPU-friendly).  
+- Push updated README so GitHub/LinkedIn visitors see you did more than just “run the model.”  
+
+---
 
