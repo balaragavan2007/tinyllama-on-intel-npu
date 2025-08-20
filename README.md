@@ -18,6 +18,8 @@ Install these before running:
 ```bash
 git clone https://github.com/balaragavan2007/tinyllama-on-intel-npu.git
 cd tinyllama-on-intel-npu
+python -m venv llm
+llm\Scripts\activate
 pip install -r requirements.txt
 ```
 ---
