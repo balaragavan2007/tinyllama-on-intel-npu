@@ -2,7 +2,7 @@ intel-npu-acceleration-library
 openvino==2025.2.0
 openvino-genai==2025.2.0
 onnxruntime-genai
-openvino-dev[onnx]
+optimum[openvino]
 transformers
 accelerate
 sentencepiece
