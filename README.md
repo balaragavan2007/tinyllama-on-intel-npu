@@ -16,8 +16,8 @@ This project shows how to run a lightweight chatbot locally on your laptop’s N
 ## ⚡ Requirements
 Install these before running:
 ```bash
-git clone https://github.com/YOUR-USERNAME/tinyllama-npu.git
-cd tinyllama-npu
+git clone https://github.com/balaragavan2007/tinyllama-on-intel-npu.git
+cd tinyllama-on-intel-npu
 pip install -r requirements.txt
 ```
 ---
